@@ -1,5 +1,5 @@
 # Astroneer-project
-Xây dựng ứng dụng web-1-1-23(N02)
+Xây dựng ứng dụng web-1-1-23(N02) - Nhóm 19
 ## Thông tin thành viên:
 - Nguyễn Minh Trường Giang - 21011597
 - Nguyễn Cao Anh - 21012036
