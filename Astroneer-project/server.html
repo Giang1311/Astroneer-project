@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="server.css" rel="stylesheet" type="text/css">
+<title>Astroneer | A Game About Aero Industry and Interplanetary Exploration</title>
+<link rel="icon" href="Image/cropped-apple-icon-precomposed-32x32.png" sizes="32x32"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+  <div class="Intro">
+    <nav id="mainNav">
+      <div class="navbar1">
+        <ul>
+          <li><a href="server.html" class="link">Servers</a></li>
+          <li><a href="news.html" class="link">News</a></li>
+          <li><a href="support.html" class="link">Support</a></li>
+          <li class="emblem"><a href="index.html"><img alt="Astroneer Emblem" class="emblem" src="Image/astroneer-emblem.png"></a></li>
+          <li><a href="https://astroneer.wiki.gg/wiki/Astroneer_Wiki" class="link">Wiki</a></li>
+          <li><a href="https://discordapp.com/invite/astroneer" class="link">Discord</a></li>
+          <li><a href="https://store.astroneer.space" class="link">Merch</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <a href="index.html"><img src="Image/astroneer-logo.png" class="logo"></a>
+    <br>
+    <h3>Dedicated Servers</h3>
+
+    <nav id="PurchaseNav">
+      <div id="navbar2">
+        <ul class="ul2">
+          <li><a class="button" href="https://www.humblebundle.com/store/astroneer"><img alt="Purchase Direct" src="Image/icon-system-era-white.png" class="icon"><span>Purchase Direct<span></a></li>
+          <li><a class="button" href="https://store.playstation.com/en-us/product/UP2467-CUSA16473_00-ASTRONEER0000000"><img alt="Purchase on PS4" src="Image/header_icon_ps4.png" class="icon"><span>Purchase on PS4<span></a></li>
+          <li><a class="button" href="http://store.steampowered.com/app/361420"><img alt="Purchase on Steam" src="Image/icon-steam-white.png" class="icon"><span>Purchase on Steam<span></span></span></a></li>
+          <li><a class="button" href="https://www.microsoft.com/en-us/store/p/astroneer-game-preview/9nblggh43kzb"><img alt="Purchase on Xbox" src="Image/icon-xbox-white.png" class="icon"><span>Purchase on Xbox<span></a></li>
+          <li><a class="button" href="https://www.nintendo.com/games/detail/astroneer-switch/"><img alt="Purchase on Nintendo" src="Image/icon-nintendo-white.png" class="icon"><span>Purchase on Nintendo<span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="MobileNav">
+      <div class="dropdown">
+        <input type="image" src="Image/astroneer-logo.png" onclick="Click()" class="dropbtn"></button>
+        <div id="DropdownLeft" class="dropdown-content">
+          <a href="server.html" class="link">Servers</a>
+          <a href="news.html" class="link">News</a>
+          <a href="support.html" class="link">Support</a>
+          <a href="https://astroneer.wiki.gg/wiki/Astroneer_Wiki" class="link">Wiki</a>
+          <a href="https://discordapp.com/invite/astroneer" class="link">Discord</a>
+          <a href="https://store.astroneer.space" class="link">Merch</a>
+        </div>
+
+        <div class="dropdown2">
+          <button onclick="Click2()" class="dropbtn2">Purchase</button>
+          <div id="DropdownRight" class="dropdown-content2">
+            <a href="https://www.humblebundle.com/store/astroneer" class="link"><img alt="Purchase Direct" src="Image/icon-system-era-white.png" class="iconMobile">Purchase Direct</a>
+            <a href="https://store.playstation.com/en-us/product/UP2467-CUSA16473_00-ASTRONEER0000000" class="link"><img alt="Purchase on PS4" src="Image/header_icon_ps4.png" class="iconMobile">Purchase on PS4</a>
+            <a href="http://store.steampowered.com/app/361420" class="link"><img alt="Purchase on Steam" src="Image/icon-steam-white.png" class="iconMobile">Purchase on Steam</a>
+            <a href="https://www.microsoft.com/en-us/store/p/astroneer-game-preview/9nblggh43kzb" class="link"><img alt="Purchase on Xbox" src="Image/icon-xbox-white.png" class="iconMobile">Purchase on Xbox</a>
+            <a href="https://www.nintendo.com/games/detail/astroneer-switch/" class="link"><img alt="Purchase on Nintendo" src="Image/icon-nintendo-white.png" class="iconMobile">Purchase on Nintendo</a>
+          </div>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <div class="support">
+    <h4>ASTRONEER DEDICATED SERVERS ARE LIVE FOR STEAM, XBOX, AND PS4! READ THE DIRECTIONS BELOW TO RUN A SERVER, OR FEEL FREE TO RENT ONE FROM OUR TRUSTED PROVIDERS TO ENABLE CROSS PLAY!</h4>
+    <br>
+    <div class="supportList">
+        <div class="header">
+            <div class="anyQuestion">Got a question about servers?</div>
+            <a href="#question" class="FAQbutton">Read the FAQ</a>
+        </div>
+
+        <div class="support-portal-list">
+            <a href="https://blog.astroneer.space/p/astroneeer-dedicated-server-providers-and-details/" class="Rent">
+                <h2>Rent a server from an official provider</h2>
+                <p>Want to rent your own server? See a full list of partners to enable full cross play for all platforms.</p>
+            </a>
+            <a href="https://blog.astroneer.space/p/astroneer-dedicated-server-details/" class="Detail">
+                <h2>Want to learn how to run your own server?</h2>
+                <p>Read up on all the details regarding 'host your own' servers via steam.</p>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+
+    <div class="QnA">
+            <div class="qna-item">
+                <div id="question">Q: How do I set up my own server at home?</div>
+                <div id="answer">
+                <p>*DISCLAIMER* This is a reasonaby complicated process that requires you to make adjustments to your firewall. While we are offering directions for initial set up, we offer no direct warranty or support related to host your own servers. Opening up your internet to outside connections is to be done completely at your own risk. Any attempt to modify the game or connect to our backend services to circumvent unlocks will be met with an immediate ban. Now for actual details!</p>
+                <h4 class="h4text">DOWNLOAD DEDICATED SERVER FILES</h4>
+                <p>First off, you are going to need to download the Dedicated Server files via steam. Load into steam and navigate to LIBRARY &gt; TOOLS. Find ASTRONEER Dedicated Server in the list and install.</p>
+                <h4 class="h4text">LOCATE AND MODIFY DEDICATED SERVER .INI FILES</h4>
+                <p>DISCLAIMER: DO NOT MODIFY .INI FILES WHILE THE SERVER IS RUNNING. CHANGES TO THE .INI WHILE THE SERVER IS RUNNING WILL NOT GET SAVED.</p> 
+                <p>Once the files are installed in the directory of your choosing, you will need to modify two .ini files to enable full functionality. Navigate to the directory of installation and then</p> 
+                <p>ASTRONEER DEDICATED SERVER &gt; ASTRO &gt; SAVED &gt; CONFIG &gt; WINDOWS SERVER</p>
+                <p>The two files we will be working in are Engine.ini and AstroServerSettings.ini. If they don't exist, try running the server via steam first and then closing it. First up, lets tackle Engine.ini.</p>
+                <h4 class="h4text">SET CONNECTION PORT</h4>
+                <p>In Engine.ini, you will want to configure the port that the server will accept connections on. You can use a port of your choosing, but for our purposes we are going to go with Port 8777. Add the following lines to Engine.ini</p>
+                <p>[URL]<br>
+                Port=8777</p>
+                <p>THIS ONLY CONFIGURES THE PORT THAT ASTRONEER LOOK FOR CONNECTIONS ON. You will still have to set an exception for your firewall to accept connections on this port. We arent going to explain that here as it can vary based on your configuration but <a href="https://www.tomshardware.com/news/how-to-open-firewall-ports-in-windows-10,36451.html" class="vidLink">CLICK HERE</a> for a great article that explains it in detail for Windows 10.</p>
+                Once your port has been configured, you will likely need to log into your local router to also forward ports to your server hardware. This can vary based on the type of router you are using, so we suggest that you check with your internet provider to do this safely. Check for documentation on Port Forwarding. The basic process involves logging into your router, and then setting up port forwarding to the port you just opened up in the previous step. Here is a video link that will explain all about port forwarding in 5 minutes! <a href="https://www.youtube.com/watch?v=jfSLxs40sIw" class="vidLink">Port forwarding crash course!</a>
+                <p>AstroServerSettings.ini should have a few fields already in it. You can use this to modify the settings of the server you are running rather than loading up the entire game to make changes. This only works if the server is offline. </p> 
+                <h4 class="h4text">SET YOUR PUBLIC IP ADDRESS</h4>
+                <p>AstroServerSettings.ini will need a line that sets the PublicIP of the server that players will put in game. Use a public IP checker like (https://www.google.com/search?q=my+ip) to figure out yours and then add it to the INI file. Example below, using 10.10.10.100 as the IP:</p>
+                <ul>
+                <li>PublicIP=10.10.10.100</li>
+                </ul>
+                <p>
+                </p><p>Once you get your own server up and running, you might want to make it your own!</p>
+                <h4>SET AN OWNER</h4>
+                The easiest way to do this is to modify your Astroserversettings.ini with the following lines:
+                <ul>
+                <li>OwnerName=yoursteamname
+                </li><li>OwnerGuid=0
+                </li></ul>
+                <p>This will set the first player that connects to the server with the Steam name that is listed in the OwnerName line as the owner of the Server!</p>
+                <p>You can also set an owner other than yourself by opening the aforementioned astroserversettings.ini, then deleting the Steam name currently in the owner spot and setting it to the Steam name of the intended owner. The next time they connect it will set them and add a guid id that is unique to them to the ini.</p>
+                <h4 class="h4text">ENJOY</h4>
+                <p>Once this is configured, your server should be pretty much ready to go!</p>
+                </div>
+            </div>
+
+            <div class="qna-item">
+                <div id="question2">Q: Do servers enable cross play?</div>
+                <div id="answer2">
+                    <p>YES Xbox and PC players can connect, but only via a preferred dedicated server. Xboxes are not allowed to connect to a non authenticated server that someone might be running on their own. PS4 players can connect to any Astroneer dedicated servers.</p>
+                </div>
+            </div>
+
+            <div class="qna-item">
+                <div id="question3">Q: Are servers available for PS4?</div>
+                <div id="answer3">
+                    <p>Yes! PS4 players can connect to any servers so feel free to run your own servers or rent through one of our trusted partners!.</p>
+                </div>
+            </div>
+                            
+            <div class="qna-item">
+                <div id="question4">Q: Can I add my own saves to the server?</div>
+                <div id="answer4">
+                    <p>Yes you can add your own save to your server if you set up the server how we showed in this guide. </p>
+                    <p>Location: COMMON -> ASTRONEER DEDICATED SERVER -> ASTRO -> SAVED -> SAVEGAMES </p>
+                    <p>Now you drop in the save you want to use on your server in the SAVEGAMES folder.  Make sure the name is similar to this:</p>
+                    <p>MYSAVENAME$2019.05.04-01.20.07.savegame</p>
+                    <p>The name is broken up by a '$', everything to the left is the name, everything to the right is the date of the save. The date doesn't need to be accurate, just something valid. </p>
+                    <p>In our example, the date/time is 'May 4th 2019, 01:20:07', and the name is 'MYSAVENAME'.</p>
+                    <p>If you have done that you go to your AstroServerSettings.ini. (see above)</p>
+                    <p>Now look for this line similar to this:</p>
+                    <p>ActiveSaveFileDescripiteveName=SAVE_1</p>
+                    <p>now that we found that line we put in the save name so if your save name is</p>
+                    <p>MYSAVENAME$2019.05.04-01.20.07.savegame</p>
+                    <p>Make sure you only put everything before the ''$'' date and time.  If you put it in correctly it should look something like below:</p>
+                    <p>ActiveSaveFileDescripiteveName=MYSAVENAME</p>
+                </div>
+            </div>
+            
+            <a href="#question" class="topButton">Back To Top</a>
+    </div>
+
+  
+  <div class="social">
+    <h4>More Astroneer Content in These Places</h4>
+    <div class="social-wrapper">
+      <a target="_blank" class="social-link" href="http://twitter.com/astroneergame">
+        <img src="Image/icon-twitter-white.png" alt="">
+        <strong>Twitter</strong>
+      </a>
+
+      <a target="_blank" class="social-link" href="http://facebook.com/astroneergame">
+        <img src="Image/icon-facebook-white.png" alt="">
+        <strong>Facebook</strong>
+      </a>
+
+      <a target="_blank" class="social-link" href="http://instagram.com/astroneergame">
+        <img src="Image/icon-instagram-white.png" alt="">
+        <strong>Instagram</strong>
+      </a>
+
+      <a target="_blank" class="social-link" href="https://www.youtube.com/channel/UCkpGuffDLnLlLv8fdoBDnnw">
+        <img src="Image/icon-youtube-white.png" alt="">
+        <strong>Youtube</strong>
+      </a>
+
+      <a target="_blank" class="social-link" href="http://twitch.tv/ses_dev">
+        <img src="Image/icon-twitch-white.png" alt="">
+        <strong>Twitch</strong>
+      </a>
+    </div>
+    <div id="mailing-list">
+      <a target="_blank" href="http://eepurl.com/docoQT" class="subscribe">Subscribe to our Mailing List</a>
+    </div>
+  </div>
+
+
+  <footer>
+    <a class="system-era-logo" href="http://systemera.net/"><img alt="System Era Logo" src="Image/system-era-logo-white.png"></a>
+    <nav class="footer-nav">
+      <ul>
+        <li>System Era Softworks © 2023</li>
+        <li><a href="https://astroneer.space/presskit/sheet.php?p=astroneer">Presskit</a></li>
+        <li><a href="https://www.astroneer.space/support">Contact</a></li>
+        <li><a href="https://systemera.net/privacy/privacy.php">Privacy Policy</a></li>
+        <li><a href="http://systemera.net/jobs">Jobs</a></li>
+        </ul>
+    </nav>
+  </footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar2");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar2");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function Click() {
+  document.getElementById("DropdownLeft").classList.toggle("show");
+}
+
+function Click2() {
+  document.getElementById("DropdownRight").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+$(document).ready(function(){
+    $("#question").click(function(){
+        $("#answer").slideToggle("fast");
+    });
+});
+
+$(document).ready(function(){
+    $("#question2").click(function(){
+        $("#answer2").slideToggle("fast");
+    });
+});
+
+$(document).ready(function(){
+    $("#question3").click(function(){
+        $("#answer3").slideToggle("fast");
+    });
+});
+
+$(document).ready(function(){
+    $("#question4").click(function(){
+        $("#answer4").slideToggle("fast");
+    });
+});
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+
+</body>
+</html>
